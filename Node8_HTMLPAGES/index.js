@@ -5,6 +5,8 @@ const app = express();
 const publicPath = path.join(__dirname,'public');
 // console.log(publicPath);
 
+
+//  app. use() method mounts or puts the specified middleware functions at the specified path.
 app.use(express.static(publicPath));   // use is a middleware  (function of express js)
 // express.static loads public content from publicPath
 // app is a executed function f express

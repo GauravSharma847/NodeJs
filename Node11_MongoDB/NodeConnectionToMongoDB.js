@@ -1,7 +1,7 @@
 const {MongoClient} = require('mongodb');
 const url = 'mongodb://localhost:27017';
 const database = 'e-comm';
-const client = new MongoClient(url);   // i used clied to denote that data is recieved to client from database
+const client = new MongoClient(url);   // I used client to denote that data is recieved to client from database
 
 async function getData(){
     let result = await client.connect();   // this client return a promise to handle that we use await and to use await we have to make this function async

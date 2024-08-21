@@ -5,6 +5,7 @@ const app = express();
 const mongodb = require('mongodb');   // we imported this to make object id instance
 
 app.use(express.json());  // post man se data node js pe bhejte hai to ise add karte hai -> data ko convert karlete hai taki wo hame available hojaye
+// req se body get karta hai
 
 app.get('/',async (req,res) =>{
     let data = await dbConnect();
@@ -45,4 +46,7 @@ app.delete("/:id",async (req,res)=>{
     res.send(result);
 });
 app.listen(5000);
+
+
+// create a api tp send hello world 
 

@@ -4,6 +4,7 @@ const app = express();
 
 const publicPath = path.join(__dirname,'public');
 
+// it removes the extensions from the route pagwe
 app.get('',(_,res) =>{
     res.sendFile(`${publicPath}/index.html`)
 });
@@ -13,7 +14,7 @@ app.get('/about',(_,res) =>{
 app.get('/help',(_,res) =>{
     res.sendFile(`${publicPath}/help.html`)
 });
-app.get('*',(_,res) =>{
+app.get('*',(_,res) =>{  // 404 page
     res.sendFile(`${publicPath}/nopage.html`)
 });
 

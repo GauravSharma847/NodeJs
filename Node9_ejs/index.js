@@ -23,6 +23,6 @@ app.get('/profile',(_,res) =>{
 
 app.get('/login',(_,res) =>{
     res.render('login');
-})
+});
 
 app.listen(5000);

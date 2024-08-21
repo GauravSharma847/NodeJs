@@ -25,7 +25,7 @@ const filePath = `${dirPath}/apple.txt`;
 //RENAME
 
 // fs.rename(filePath,`${dirPath}/fruit.txt`,(err) =>{
-//     if(!err){
+//    if(!err){
 //         console.log("File Name Updated Successfully");
 //     }
 // })
